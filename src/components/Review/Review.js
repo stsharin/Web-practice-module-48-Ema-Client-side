@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getDatabaseCart, removeFromDatabaseCart, processOrder } from '../../utilities/databaseManager';
-import fakeData from '../../fakeData';
+// import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import Cart from '../Cart/Cart';
 import happyImage from '../../images/giphy.gif';
@@ -26,7 +26,7 @@ const Review = () => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
 
-        fetch('', {
+        fetch('http://localhost:5000/productsByKeys', {
             method: 'POST',
             headers: {
                  'Content-Type': 'application/json'
