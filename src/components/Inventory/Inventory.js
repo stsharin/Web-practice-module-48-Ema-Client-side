@@ -1,5 +1,5 @@
 import React from 'react';
-import fakeData from '../../fakeData';
+// import fakeData from '../../fakeData';
 
 const Inventory = () => {
     // sending data or request to add data

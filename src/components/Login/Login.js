@@ -5,7 +5,6 @@ import { useHistory, useLocation } from 'react-router-dom';
 import { initializeLoginFramework, handleGoogleSignIn, handleSignOut, handleFbSignIn, createUserWithEmailAndPassword, signInWithEmailAndPassword } from './loginManager';
 
 
-
 function Login() {
   const [newUser, setNewUser] = useState(false);
   const [user, setUser] = useState({
