@@ -8,6 +8,7 @@ import ProcessPayment from '../ProcessPayment/ProcessPayment';
 const Shipment = () => {
   const { register, handleSubmit, watch, errors } = useForm();
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  
   const onSubmit = data => {
     console.log('form submitted', data)
   };
